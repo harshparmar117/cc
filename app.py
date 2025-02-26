@@ -143,6 +143,7 @@ def preprocess_input(data, month):
 def predict():
     data = request.get_json()
     print("Received JSON:", data)
+    print(request)
     month = data.get("month", 1)
 
     print(month)
