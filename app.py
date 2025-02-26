@@ -142,6 +142,7 @@ def preprocess_input(data, month):
 @app.route('/predict', methods=['POST'])
 def predict():
     data = request.get_json()
+    print("Received JSON:", data)
     month = data.get("month", 1)
 
     print(month)
